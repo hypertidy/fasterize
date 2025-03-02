@@ -32,7 +32,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">fasterize</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.0.9001</span>
       </span>
     </div>
 
@@ -59,7 +59,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/ecohealthalliance/fasterize/" class="external-link">
+  <a href="https://github.com/hypertidy/fasterize/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
 
   </a>
@@ -81,9 +81,9 @@
                         <h4 data-toc-skip class="author">Noam Ross,
 Michael Sumner</h4>
             
-            <h4 data-toc-skip class="date">2024-09-24</h4>
+            <h4 data-toc-skip class="date">2025-03-02</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/ecohealthalliance/fasterize/blob/main/vignettes/using-fasterize.Rmd" class="external-link"><code>vignettes/using-fasterize.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/hypertidy/fasterize/blob/main/vignettes/using-fasterize.Rmd" class="external-link"><code>vignettes/using-fasterize.Rmd</code></a></small>
       <div class="hidden name"><code>using-fasterize.Rmd</code></div>
 
     </div>
@@ -105,7 +105,7 @@ CRAN:</p>
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'fasterize'</span><span class="op">)</span></span></code></pre></div>
 <p>Install the development version of <strong>fasterize</strong> with <a href="https://cran.r-project.org/package=devtools" class="external-link"><strong>devtools</strong></a>:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"ecohealthalliance/fasterize"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"hypertidy/fasterize"</span><span class="op">)</span></span></code></pre></div>
 <p><strong>fasterize</strong> uses <a href="https://cran.r-project.org/package=Rcpp" class="external-link"><strong>Rcpp</strong></a>
 and thus requires a compile toolchain to install from source. Testing
 (and most use) requires <a href="https://cran.r-project.org/package=sf" class="external-link"><strong>sf</strong></a>,
@@ -121,15 +121,15 @@ is limited to rasterizing polygons.</p>
 re-exported.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://rspatial.org/raster" class="external-link">raster</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ecohealthalliance/fasterize" class="external-link">fasterize</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/hypertidy/fasterize" class="external-link">fasterize</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
 <span><span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">rbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">180</span>,<span class="op">-</span><span class="fl">20</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">140</span>,<span class="fl">55</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">10</span>, <span class="fl">0</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">140</span>,<span class="op">-</span><span class="fl">60</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">180</span>,<span class="op">-</span><span class="fl">20</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">hole</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">rbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">150</span>,<span class="op">-</span><span class="fl">20</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">100</span>,<span class="op">-</span><span class="fl">10</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">110</span>,<span class="fl">20</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">150</span>,<span class="op">-</span><span class="fl">20</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">p1</span>, <span class="va">hole</span><span class="op">)</span></span>
 <span><span class="va">p2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">rbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">10</span>,<span class="fl">0</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">140</span>,<span class="fl">60</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">160</span>,<span class="fl">0</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">140</span>,<span class="op">-</span><span class="fl">55</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">10</span>,<span class="fl">0</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">p3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">rbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">125</span>,<span class="fl">0</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">60</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">40</span>,<span class="fl">5</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">15</span>,<span class="op">-</span><span class="fl">45</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">125</span>,<span class="fl">0</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">pols</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://r-spatial.github.io/sf/reference/sf.html" class="external-link">st_sf</a></span><span class="op">(</span>value <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span><span class="op">)</span>,</span>
-<span>             geometry <span class="op">=</span> <span class="fu"><a href="https://r-spatial.github.io/sf/reference/sfc.html" class="external-link">st_sfc</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">p1</span>, <span class="va">p2</span>, <span class="va">p3</span><span class="op">)</span>, <span class="va">st_polygon</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">pols</span> <span class="op">&lt;-</span> <span class="fu">st_sf</span><span class="op">(</span>value <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span><span class="op">)</span>,</span>
+<span>             geometry <span class="op">=</span> <span class="fu">st_sfc</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">p1</span>, <span class="va">p2</span>, <span class="va">p3</span><span class="op">)</span>, <span class="va">st_polygon</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">r</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/raster.html">raster</a></span><span class="op">(</span><span class="va">pols</span>, res <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
 <span><span class="va">r</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/fasterize.html">fasterize</a></span><span class="op">(</span><span class="va">pols</span>, <span class="va">r</span>, field <span class="op">=</span> <span class="st">"value"</span>, fun<span class="op">=</span><span class="st">"sum"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/plot.html">plot</a></span><span class="op">(</span><span class="va">r</span><span class="op">)</span></span></code></pre></div>
@@ -141,7 +141,7 @@ re-exported.</p>
 <p>Let’s compare <code><a href="../reference/fasterize.html">fasterize()</a></code> to
 <code><a href="https://rspatial.github.io/terra/reference/rasterize.html" class="external-link">raster::rasterize()</a></code>:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">pols_r</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/methods/as.html" class="external-link">as</a></span><span class="op">(</span><span class="va">pols</span>, <span class="st">"Spatial"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">pols_r</span> <span class="op">&lt;-</span> <span class="fu">as</span><span class="op">(</span><span class="va">pols</span>, <span class="st">"Spatial"</span><span class="op">)</span></span>
 <span><span class="va">bench</span> <span class="op">&lt;-</span> <span class="fu">microbenchmark</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/microbenchmark/man/microbenchmark.html" class="external-link">microbenchmark</a></span><span class="op">(</span></span>
 <span>  rasterize <span class="op">=</span> <span class="va">r</span> <span class="op">&lt;-</span> <span class="fu">raster</span><span class="fu">::</span><span class="fu"><a href="https://rspatial.github.io/terra/reference/rasterize.html" class="external-link">rasterize</a></span><span class="op">(</span><span class="va">pols_r</span>, <span class="va">r</span>, field <span class="op">=</span> <span class="st">"value"</span>, fun<span class="op">=</span><span class="st">"sum"</span><span class="op">)</span>,</span>
 <span>  fasterize <span class="op">=</span> <span class="va">f</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/fasterize.html">fasterize</a></span><span class="op">(</span><span class="va">pols</span>, <span class="va">r</span>, field <span class="op">=</span> <span class="st">"value"</span>, fun<span class="op">=</span><span class="st">"sum"</span><span class="op">)</span>,</span>
@@ -185,7 +185,7 @@ rasterizing all the layers.</p>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/unlink.html" class="external-link">unlink</a></span><span class="op">(</span><span class="st">"Mammals_Terrestrial.zip"</span><span class="op">)</span></span>
 <span><span class="op">}</span></span></code></pre></div>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">mammal_shapes</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_read.html" class="external-link">st_read</a></span><span class="op">(</span><span class="st">"Mammals_Terrestrial"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">mammal_shapes</span> <span class="op">&lt;-</span> <span class="fu">st_read</span><span class="op">(</span><span class="st">"Mammals_Terrestrial"</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">#&gt; Reading layer `Mammals_Terrestrial' from data source `/Users/noamross/dropbox-eha/projects-eha/fasterize/Mammals_Terrestrial' using driver `ESRI Shapefile'</span></span>
 <span><span class="co">#&gt; Simple feature collection with 42714 features and 27 fields</span></span>
 <span><span class="co">#&gt; geometry type:  MULTIPOLYGON</span></span>
@@ -210,8 +210,11 @@ rasterizing all the layers.</p>
 <div class="section level2">
 <h2 id="about">About<a class="anchor" aria-label="anchor" href="#about"></a>
 </h2>
-<p><strong>fasterize</strong> is developed openly at <a href="https://github.com/ecohealthalliance" class="external-link">EcoHealth Alliance</a> under
-the USAID PREDICT project..</p>
+<p><strong>fasterize</strong> was developed openly at <a href="https://www.ecohealthalliance.org/" class="external-link">EcoHealth Alliance</a> under
+the USAID PREDICT project by Noam Ross. The repository for hosting
+fasterize was taken over by Michael Sumner in December 2022, and was
+later migrated from Github ‘ecohealthalliance/fasterize’ to <a href="https://github.com/hypertidy/fasterize" class="external-link uri">https://github.com/hypertidy/fasterize</a> in March
+2025.</p>
 <p><a href="https://www.ecohealthalliance.org/" class="external-link"><img src="eha-footer.png" style="width:100.0%" alt="https://www.ecohealthalliance.org/"></a> <a href="https://ohi.vetmed.ucdavis.edu/programs-projects/predict-project" class="external-link"><img src="predictfooter.png" style="width:100.0%" alt="https://ohi.vetmed.ucdavis.edu/programs-projects/predict-project"></a></p>
 </div>
   </div>
