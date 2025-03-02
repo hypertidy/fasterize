@@ -12,8 +12,6 @@ state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![MIT Licensed - Copyright 2016 EcoHealth
 Alliance](https://img.shields.io/badge/license-MIT-blue.svg)](https://badges.mit-license.org/)
-[![Coverage
-Status](https://codecov.io/gh/hypertidy/fasterize/branch/master/graph/badge.svg)](https://codecov.io/gh/hypertidy/fasterize)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/fasterize)](https://CRAN.R-project.org/package=fasterize)
 [![CRAN RStudio mirror
