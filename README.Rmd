@@ -29,7 +29,8 @@ Fast polygon-to-raster conversion, burn polygon shapes and/or values into pixels
 [![MIT Licensed - Copyright 2016 EcoHealth Alliance](https://img.shields.io/badge/license-MIT-blue.svg)](https://badges.mit-license.org/)
 [![Coverage Status](https://codecov.io/gh/hypertidy/fasterize/branch/master/graph/badge.svg)](https://codecov.io/gh/hypertidy/fasterize)
 [![CRAN status](https://www.r-pkg.org/badges/version/fasterize)](https://CRAN.R-project.org/package=fasterize)
-[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/fasterize)](http://www.r-pkg.org/pkg/fasterize)
+[![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/fasterize)](https://www.r-pkg.org/pkg/fasterize)
+[![Codecov test coverage](https://codecov.io/gh/hypertidy/fasterize/graph/badge.svg)](https://app.codecov.io/gh/hypertidy/fasterize)
 <!-- badges: end -->
   
 

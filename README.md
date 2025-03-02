@@ -17,7 +17,9 @@ Status](https://codecov.io/gh/hypertidy/fasterize/branch/master/graph/badge.svg)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/fasterize)](https://CRAN.R-project.org/package=fasterize)
 [![CRAN RStudio mirror
-downloads](http://cranlogs.r-pkg.org/badges/fasterize)](http://www.r-pkg.org/pkg/fasterize)
+downloads](https://cranlogs.r-pkg.org/badges/fasterize)](https://www.r-pkg.org/pkg/fasterize)
+[![Codecov test
+coverage](https://codecov.io/gh/hypertidy/fasterize/graph/badge.svg)](https://app.codecov.io/gh/hypertidy/fasterize)
 <!-- badges: end -->
 
 **fasterize** is a high-performance replacement for the `rasterize()`
