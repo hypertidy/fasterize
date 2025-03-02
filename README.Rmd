@@ -24,10 +24,10 @@ Fast polygon-to-raster conversion, burn polygon shapes and/or values into pixels
 
 
 <!-- badges: start -->
-  [![R-CMD-check](https://github.com/ecohealthalliance/fasterize/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ecohealthalliance/fasterize/actions/workflows/R-CMD-check.yaml)
+  [![R-CMD-check](https://github.com/hypertidy/fasterize/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hypertidy/fasterize/actions/workflows/R-CMD-check.yaml)
   [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![MIT Licensed - Copyright 2016 EcoHealth Alliance](https://img.shields.io/badge/license-MIT-blue.svg)](https://badges.mit-license.org/)
-[![Coverage Status](https://codecov.io/gh/ecohealthalliance/fasterize/branch/master/graph/badge.svg)](https://codecov.io/gh/ecohealthalliance/fasterize)
+[![Coverage Status](https://codecov.io/gh/hypertidy/fasterize/branch/master/graph/badge.svg)](https://codecov.io/gh/hypertidy/fasterize)
 [![CRAN status](https://www.r-pkg.org/badges/version/fasterize)](https://CRAN.R-project.org/package=fasterize)
 [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/fasterize)](http://www.r-pkg.org/pkg/fasterize)
 <!-- badges: end -->
@@ -50,7 +50,7 @@ install.packages('fasterize')
 Install the development version of **fasterize** with [**devtools**](https://cran.r-project.org/package=devtools):
 
 ```{r eval = FALSE}
-devtools::install_github("ecohealthalliance/fasterize")
+devtools::install_github("hypertidy/fasterize")
 ```
 
 **fasterize** uses [**Rcpp**](https://cran.r-project.org/package=Rcpp) and thus requires a compile toolchain to install from source.
@@ -142,8 +142,9 @@ plot(mammal_raster, axes=FALSE, box=FALSE)
 
 ## About
 
-**fasterize** was developed openly at [EcoHealth Alliance](https://github.com/ecohealthalliance) under the USAID PREDICT project.   
-In 
+**fasterize** was developed openly at [EcoHealth Alliance](https://www.ecohealthalliance.org/) under the USAID PREDICT project by Noam Ross.   The repository for hosting fasterize was taken over by  Michael Sumner in December 2022, and was later migrated from Github 'ecohealthalliance/fasterize' to https://github.com/hypertidy/fasterize in March 2025. 
+
+
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 [![https://www.ecohealthalliance.org/](vignettes/eha-footer.png)](https://www.ecohealthalliance.org/)

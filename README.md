@@ -6,14 +6,14 @@ into pixels.
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/ecohealthalliance/fasterize/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ecohealthalliance/fasterize/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/hypertidy/fasterize/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hypertidy/fasterize/actions/workflows/R-CMD-check.yaml)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![MIT Licensed - Copyright 2016 EcoHealth
 Alliance](https://img.shields.io/badge/license-MIT-blue.svg)](https://badges.mit-license.org/)
 [![Coverage
-Status](https://codecov.io/gh/ecohealthalliance/fasterize/branch/master/graph/badge.svg)](https://codecov.io/gh/ecohealthalliance/fasterize)
+Status](https://codecov.io/gh/hypertidy/fasterize/branch/master/graph/badge.svg)](https://codecov.io/gh/hypertidy/fasterize)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/fasterize)](https://CRAN.R-project.org/package=fasterize)
 [![CRAN RStudio mirror
@@ -39,7 +39,7 @@ Install the development version of **fasterize** with
 [**devtools**](https://cran.r-project.org/package=devtools):
 
 ``` r
-devtools::install_github("ecohealthalliance/fasterize")
+devtools::install_github("hypertidy/fasterize")
 ```
 
 **fasterize** uses [**Rcpp**](https://cran.r-project.org/package=Rcpp)
@@ -81,6 +81,11 @@ Let’s compare `fasterize()` to `terra::rasterize()`:
 
 ``` r
 pols_t <- terra::vect(p123)
+```
+
+    #> dialect must be 'OGRSQL' or 'SQLITE', default value '' means 'OGRSQL'
+
+``` r
 pols_t$value <- 1:3
 #pols_r <-  as(pols_t, "Spatial")
 tr <- terra::rast(r)
@@ -96,9 +101,9 @@ print(bench, digits = 3)
 ```
 
     #> Unit: milliseconds
-    #>       expr   min    lq  mean median    uq   max neval cld
-    #>  terrarize 22.76 25.13 28.90  25.80 26.85 205.1   100  a 
-    #>  fasterize  1.83  2.12  2.56   2.46  2.56  19.4   100   b
+    #>       expr   min    lq   mean median     uq  max neval cld
+    #>  terrarize 9.464 9.761 11.306 10.022 10.375 82.0   100  a 
+    #>  fasterize 0.647 0.684  0.839  0.845  0.971  1.1   100   b
 
 How does `fasterize()` do on a large set of polygons? Here I download
 the IUCN shapefile for the ranges of all terrestrial mammals and
@@ -138,9 +143,13 @@ plot(mammal_raster, axes=FALSE, box=FALSE)
 ## About
 
 **fasterize** was developed openly at [EcoHealth
-Alliance](https://github.com/ecohealthalliance) under the USAID PREDICT
-project.  
-In Please note that this project is released with a [Contributor Code of
+Alliance](https://www.ecohealthalliance.org/) under the USAID PREDICT
+project by Noam Ross. The repository for hosting fasterize was taken
+over by Michael Sumner in December 2022, and was later migrated from
+Github ‘ecohealthalliance/fasterize’ to
+<https://github.com/hypertidy/fasterize> in March 2025.
+
+Please note that this project is released with a [Contributor Code of
 Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
 to abide by its terms.
 

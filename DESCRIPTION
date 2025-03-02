@@ -1,6 +1,6 @@
 Package: fasterize
 Title: Fast Polygon to Raster Conversion 
-Version: 1.1.0
+Version: 1.1.0.9001
 Authors@R: c(
     person("Noam", "Ross", , "ross@ecohealthalliance.org",
            role = c("aut"),
@@ -16,10 +16,12 @@ Description: Provides a drop-in replacement for rasterize() from the 'raster'
    There is support for the main options provided by the rasterize() function, 
    including setting the field used and background value, and options for 
    aggregating multi-layer rasters. Uses the scan line algorithm attributed to
-   Wylie et al. (1967) <doi:10.1145/1465611.1465619>.
+   Wylie et al. (1967) <doi:10.1145/1465611.1465619>. Note that repository 
+   originally was hosted at 'Github' 'ecohealthalliance/fasterize' but was
+   migrated to 'hypertidy/fasterize' in March 2025. 
 License: MIT + file LICENSE
-URL: https://github.com/ecohealthalliance/fasterize
-BugReports: https://github.com/ecohealthalliance/fasterize/issues
+URL: https://github.com/hypertidy/fasterize
+BugReports: https://github.com/hypertidy/fasterize/issues
 RoxygenNote: 7.3.2
 Suggests: 
     testthat,

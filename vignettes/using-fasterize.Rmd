@@ -30,7 +30,7 @@ Install the development version of **fasterize** with
 [**devtools**](https://cran.r-project.org/package=devtools):
 
 ``` r
-devtools::install_github("ecohealthalliance/fasterize")
+devtools::install_github("hypertidy/fasterize")
 ```
 
 **fasterize** uses [**Rcpp**](https://cran.r-project.org/package=Rcpp)
@@ -157,7 +157,7 @@ plot(mammal_raster, axes=FALSE, box=FALSE)
 About
 -----
 
-**fasterize** is developed openly at [EcoHealth Alliance](https://github.com/ecohealthalliance) under the USAID PREDICT project..
+**fasterize** was developed openly at [EcoHealth Alliance](https://www.ecohealthalliance.org/) under the USAID PREDICT project by Noam Ross.   The repository for hosting fasterize was taken over by  Michael Sumner in December 2022, and was later migrated from Github 'ecohealthalliance/fasterize' to https://github.com/hypertidy/fasterize in March 2025. 
 
 [![https://www.ecohealthalliance.org/](eha-footer.png){ width=100% }](https://www.ecohealthalliance.org/)
 [![https://ohi.vetmed.ucdavis.edu/programs-projects/predict-project](predictfooter.png){ width=100% }](https://ohi.vetmed.ucdavis.edu/programs-projects/predict-project)

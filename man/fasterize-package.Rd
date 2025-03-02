@@ -5,15 +5,15 @@
 \alias{fasterize-package}
 \title{fasterize: Fast Polygon to Raster Conversion}
 \description{
-Provides a drop-in replacement for rasterize() from the 'raster' package that takes polygon vector or data frame objects, and is much faster. There is support for the main options provided by the rasterize() function, including setting the field used and background value, and options for aggregating multi-layer rasters. Uses the scan line algorithm attributed to Wylie et al. (1967) \doi{10.1145/1465611.1465619}.
+Provides a drop-in replacement for rasterize() from the 'raster' package that takes polygon vector or data frame objects, and is much faster. There is support for the main options provided by the rasterize() function, including setting the field used and background value, and options for aggregating multi-layer rasters. Uses the scan line algorithm attributed to Wylie et al. (1967) \doi{10.1145/1465611.1465619}. Note that repository originally was hosted at 'Github' 'ecohealthalliance/fasterize' but was migrated to 'hypertidy/fasterize' in March 2025.
 
 Fast polygons-to-raster conversion
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/ecohealthalliance/fasterize}
-  \item Report bugs at \url{https://github.com/ecohealthalliance/fasterize/issues}
+  \item \url{https://github.com/hypertidy/fasterize}
+  \item Report bugs at \url{https://github.com/hypertidy/fasterize/issues}
 }
 
 }

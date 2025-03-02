@@ -1,3 +1,7 @@
+# fasterize dev
+
+* Migrated home of repository to https://github.com/hypertidy/fasterize (issue #57). 
+
 # fasterize 1.1.0
 
 * Cleaned up old spelling detritus in tests, thanks to CRAN. 

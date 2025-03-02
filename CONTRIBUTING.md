@@ -2,7 +2,7 @@
 
 You want to contribute to **fasterize**? Great! 
 
-Please submit questions, bug reports, and requests in the [issues tracker](https://github.com/ecohealthalliance/fasterize/issues). Please submit bug
+Please submit questions, bug reports, and requests in the [issues tracker](https://github.com/hypertidy/fasterize/issues). Please submit bug
 reports with a minimal  [reprex](https://www.tidyverse.org/help/#reprex).
 
 If you plan to contribute code, go ahead and fork the repo and submit a pull request. A few notes:
