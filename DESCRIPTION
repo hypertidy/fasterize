@@ -18,7 +18,8 @@ Description: Provides a drop-in replacement for rasterize() from the 'raster'
    aggregating multi-layer rasters. Uses the scan line algorithm attributed to
    Wylie et al. (1967) <doi:10.1145/1465611.1465619>. Note that repository 
    originally was hosted at 'Github' 'ecohealthalliance/fasterize' but was
-   migrated to 'hypertidy/fasterize' in March 2025. 
+   migrated to 'hypertidy/fasterize' in March 2025, and can be found indexed
+   on 'R universe' <https://cran.r-universe.dev/fasterize>. 
 License: MIT + file LICENSE
 URL: https://github.com/hypertidy/fasterize
 BugReports: https://github.com/hypertidy/fasterize/issues
